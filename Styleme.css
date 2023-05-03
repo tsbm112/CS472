@@ -1,0 +1,15 @@
+body {background-color: rgb(89, 86, 71,1.000);
+    color: white;}
+    h1,h2,h3,h4,h5 {color: rgb(170, 170, 251); 
+    }
+    h1 { font-size: 300%;}
+    h2,h3,h4,h5 {font-size: 150%;}
+    .result
+    {
+        color: yellow;
+    }
+
+    a{
+        text-decoration: none;
+        color:red;
+    }
