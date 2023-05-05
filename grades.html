@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="referrer" content="origin" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Retrieve Grade</title>
+    <style>
+      .fieldBox {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Retrieve your grade</h1>
+    <form action="http://mumstudents.org/params.php">
+      <label for="fname" name="fname">First Name</label>
+      <input
+        type="text"
+        name="fname"
+        pattern="[A-Z]?[a-z]*"
+        title="Enter letters only!"
+      />
+      <br /><br />
+
+      <label for="lname" name="lname">Last Name</label>
+      <input
+        type="text"
+        name="lname"
+        pattern="[A-Z]?[a-z]*"
+        title="Enter letters only!"
+      />
+      <br /><br />
+
+      <label for="ID" name="ID">Student ID</label>
+      <input type="text " id="ID" pattern="[0-9]+" title="Numbers Only" />
+      <br /><br />
+
+      <label for="course" name="course">Select Assignment</label>
+      <select name="course" id="corseName">
+        <option value="FPP">Assignment 1</option>
+        <option value="MPP">Assignment 2</option>
+        <option value="WAP">Assignment 3</option>
+      </select>
+      <br />
+      <br />
+    </form>
+    <br />
+    <form action="postToServer">
+      <div class="fieldBox">
+        <fieldset>
+          <legend>Please select your entry</legend>
+
+          <input type="radio" id="entry1" name="entry" value="May" />
+          <label for="entry">May</label>
+
+          <input type="radio" id="entry2" name="entry" value="August" />
+          <label for="entry">August</label>
+
+          <input type="radio" id="entry3" name="entry" value="October" />
+          <label for="entry">October</label>
+
+          <input type="radio" id="entry4" name="entry" value="February" />
+          <label for="entry">February</label>
+        </fieldset>
+        <p>Are you only looking your own grade</p>
+        <input type="radio" id="yes" name="notlying" value="Yes" />
+        <label for="entry">Yes</label>
+
+        <input type="radio" id="No" name="notlying" value="No" />
+        <label for="entry">No</label><br />
+        <label for="grade">Get Grade! </label>
+        <label > I AM ENTERING THE CORRECT INFORMATION <input  name="notlying" type="checkbox" value="yes" ></label><br>
+            <label > I AM ONLY CHECKING  ONLY MY OWN GRADES  <input  name="yourgrade" type="checkbox" value="yes" ></label><br>
+        <input type="submit" value="submit" />
+      </div>
+    </form>
+     
+  </body>
+</html>

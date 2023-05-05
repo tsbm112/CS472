@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="labs.css" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="lab.css">
+</head>
+<body>
+    <div>
+        <h1 style="margin-bottom: 0px; color: rgb(117, 115, 112)">
+            nerd<span style="color: rgb(56, 134, 223)">Luv<sup>tm</sup></span>
+          </h1>
+          <p style="margin-top: 0px">Where meek geeks meet</p>
+          <div style="background-color: rgb(207,178,240);">
+            <legend>New User SignUp:</legend>
+            <div class="first">
+        <form action="http://mumstudents.org/params.php">
+          <div class="left"> 
+            
+              <label for="Name"> Name</label><br>
+              <label for="Gender">Gender</label><br>
+              <label for="age">Age</label><br>
+              <label for="personality">personality</label><br>
+              <label for="os"> Favorite OS:</label><br>
+              <label for="Name"> Seeking Age:</label>
+              
+              <br/>
+          </div>
+          <div class="right">
+            <input type="text" name="username"  name="first_name" size="6" pattern="[A-Za-z]{,16}" title="Enter 16 character letters" required /><br>
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Male</label>
+              <input type="radio" id="Female" name="gender" checked value="Female" />
+              <label for="male">Female</label>
+              <br />
+              
+              <input type="text" id="userAge" name="age" size="6" pattern="[1-9]{1,2}" title="Enter a number" required />
+              <br />
+             
+                <input type="text" name="personality" size="6" pattern="[A-Z]{1,4}"/>
+                <a href="http://www.humanmetrics.com/cgi-win/JType2.asp"> (Don't know your personality)</a><br>
+              
+              <select name="OS" id="operating">
+                <option value="Windows">Windows</option>
+                <option value="mackintosh ">mac ox</option>
+                
+                <option value="Linix">Linix</option>
+              </select>
+               <br>
+              
+              <input type="text" name="seeking" size="6" pattern="[0-9]{1,2}" placeholder="min" />
+              to
+              <input type="text" name="seeking" size="6" pattern="[0-9]{1,2}" placeholder="max" />
+              <br>
+          </div>
+          <div class="butten"> <input type="submit" value="SignUP"> 
+        </div>
+    </form>
+    </div>
+    
+            </fieldset>
+         <br />
+        
+    </div>
+    <div class="footer">
+             
+        <p>
+          This page is for single nerds to meet a date each other! Type in <br />
+          yout personal information and wait for the nerdly love to begin! <br />
+          Thank you for using our site. <br /><br />
+          Results and page(C) Copyright NerdLuv Inc.
+        </p>
+        <a href="../index.html"
+        ><img
+          src="home.jpg"
+          alt="Tsinat"
+          width="30"
+          class="home"
+        />Back to Front Page</a>
+        <br>
+        <a href="http://validator.w3.org/check/referer">
+          <img
+            src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+            alt="html validator"
+        /></a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img
+            src="https://mumstudents.org/cs472/2013-09/images/w3c-css.png"
+            alt="css-validator"
+        /></a>
+      </div>
+</body>
+</html>

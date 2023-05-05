@@ -1,0 +1,60 @@
+body{
+    user-select: none;
+	overflow-y: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: hsl(218deg 50% 91%);
+	
+}
+
+
+.first{   
+  
+    margin: 0px;
+    overflow: auto;
+   
+
+}
+legend{
+    border-radius: 0px;
+    background-color:antiquewhite;
+    padding: 1px;
+    box-shadow: 2px 2px;
+}
+
+.left{
+ float: left;
+ line-height: 25px;
+width: 40%px;
+margin: 2px;
+
+
+}
+
+.right{
+    line-height: 25px;
+    float: right;
+   
+       
+}
+.right a{
+    color: brown;
+    text-decoration: none;
+}
+.butten{
+    clear: both;
+    font-weight: bold;
+    margin: 0px;
+    align-items: center;
+
+}
+.butten input
+{   overflow: auto;
+    border-color: antiquewhite;
+    border-style: outset ;
+    border-radius: 2px;
+    font-weight: bolder;
+    background-color: rgb(221, 115, 129);
+}
+ 
