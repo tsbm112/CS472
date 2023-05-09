@@ -1,0 +1,25 @@
+body{
+     font-family: Arial;/*'Franklin Gothic Medium'; */
+     letter-spacing: -1px;
+}
+
+h1{
+font-weight: 900;
+    font-style: italic;
+}
+#textarea{
+    width: 500px;
+    /* padding-left: 30%;
+    padding-right: 10%; */
+    font-size: 20pt;
+    text-align: center;
+    
+    
+}
+legend{
+    font-size: large;
+    font-weight: bold;
+}
+label #checkbox{
+    font-family: Arial, Helvetica, sans-serif;
+}
