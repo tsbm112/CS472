@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>jQuery Quiz 2</title>
+  </head>
+  <body>
+    <h1>jQuery Quiz 2</h1>
+    <hr />
+    <ol>
+      <div>
+        <li>
+          <dt>
+            Which, if any, of the following 3 code fragments are equivalent?
+            Explain why they are different, if they are. <br />
+            Explain why they can have different parameters and be equivalent, if
+            they are equivalent.
+            <pre class="given">
+               
+              //code fragment 1
+                $("li").each(function(idx, e) { 
+                $(e).css(“color”, “yellow”); });
+              //code fragment 2
+                $("li").each(function() {
+                $(this).css(“color”, “yellow”); });
+              //code fragment 3
+                $("li").each(function(idx) {
+                $(this).css(“color”, “yellow”); });
+            </pre>
+          </dt>
+          <ul>
+            <p class="ans">
+              All three of them are equivalent, because all of them tells that
+              the css operation is applied for every element of the list.
+            </p>
+          </ul>
+        </li>
+      </div>
+
+      <div>
+        <li>
+          <dt>
+            Write a jQuery expression to find all divs on a page that include an
+            unordered list in them, and make their text color be blue.
+            <pre class="given">
+              &lt;div&gt; no ul here &lt;/div&gt;
+              &lt;div&gt;
+                This does contain a ul.
+                &lt;ul&gt;
+                  &lt;li&gt; The first item &lt;/li&gt;
+                  &lt;li&gt; The second item &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+              &lt;script&gt;
+
+              &lt;!—INSERT YOUR JQUERY CODE HERE - - &gt;
+
+              &lt;/script&gt;
+              &lt;/body&gt;
+
+            </pre>
+          </dt>
+          <pre class="ans">
+              $(document).ready(function(){
+                $("div”).has(“ul").css({"color": "blue"});
+              });
+            </pre
+          >
+        </li>
+      </div>
+
+      <div>
+        <li>
+          Write jQuery code to append the following div element (and all of its
+          contents) dynamically to the body element
+          <pre class="given">
+              &lt;div&gt; &lt;h1&gt;JQuery Core &lt;/h1&gt; &lt;/div&gt;
+              HTML
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                  &lt;meta charset="utf-8"&gt;
+                  &lt;title&gt; JS Bin &lt;/title&gt;
+                &lt;/head&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+          </pre>
+
+          <pre class="ans">
+              $(document).ready(function(){
+                $(“body”).append(“&lt;div&gt; &lt;h1&gt; jQuery Core &lt;/h1&gt; &lt;/div&gt;”);
+              });
+          </pre>
+        </li>
+      </div>
+    </ol>
+
+    
+  </body>
+</html>
