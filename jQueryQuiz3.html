@@ -65,7 +65,7 @@ show it is just text (the red bold is gone).
 </ul>
 <script>
  $(document).ready(function() {
-    $('.level-2 li').css('background-color', 'red');
+  $('.level-2').css('background-color', 'red');
   });
 </script>
 
@@ -92,14 +92,12 @@ background color to blue.
 
 <script>
   $(document).ready(function() {
-    $('.third-item').prev().css('background-color', 'blue');
+  $('li.third-item').prev().css('background-color', 'blue');
   });
 </script>
 
 </body>
 </html>
-
-......................................&&.............................................
 
 4. Let us one additional requirement for the "Go Vegetarian" button of the Webville Eatery Menu
 described in Chapter 4 of Head First jQuery: "Turkey" in the ingredient list of any entree is replaced by
@@ -121,9 +119,9 @@ requirement.
 <button class="vegetarian-option" >Go Vegetarian</button>
 
 <script>
-$('#vegetarian').click(function() {
-  $('li.turkey').text(function() {
-    return $(this).text().replace('Turkey', 'Mashed Potatoes');
+$(document).ready(function() {
+  $('.turkey').each(function() {
+    $(this).text('Mashed Potatoes');
   });
 });
 </script>
@@ -139,10 +137,11 @@ of text ("some text") in the following to green.
 <html>
 <head>
 <script>
-
-$(document).ready(function(){
- $('span').parents('li, ul').css('color', 'green');
+$(document).ready(function() {
+  $('span').parent().css('color', 'green');
+  $('span').parents('ul').css('color', 'green');
 });
+
 
 </script>
 </head>
